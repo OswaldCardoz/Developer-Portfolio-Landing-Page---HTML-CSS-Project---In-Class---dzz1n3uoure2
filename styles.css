@@ -21,7 +21,6 @@
     color: white;
     text-align: center;
     font-family:'Lato',sans-serif;
-
 }
 span{
     font-size :96px;
@@ -43,7 +42,7 @@ span{
 }
 .card{
     display: grid;
-    grid-template-columns: minmax(340px, 1fr);
+    grid-template-columns: repeat(auto-fit,minmax(340px, 1fr));
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: justify;
     background-color: #f1f1f1;
@@ -59,24 +58,28 @@ span{
 .about{
     padding: 20px;
     background-color: red;
-    width: fit-content;
+    width: 500px;
     height: 300px;
-    text-align: justify
+    text-align: justify;
 }
 .contact{
     padding: 20px;
     background-color: green;
-    width: fit-content;
+    width: 500px;
     height: 300px;
     text-align: justify;
 }
 @media only screen and (max-width:  786px){
-    .hero-section , .black-box-section , .bottom-section , .card-container-section , .grid-item{
+    .hero-section , .bottom-section , .card-container-section , .grid-item{
         display: flex;
-        min-height: 50vh;
         width: 100%;
-        font-size:24px;
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
+    }
+    .hero-section{
+        min-height: 50vh;
+    }
+    .black-box-section{
+        font-size:24px;
     }
 }
