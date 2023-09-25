@@ -58,14 +58,14 @@ span{
 .about{
     padding: 20px;
     background-color: red;
-    width: 500px;
+    width: fit-content;
     height: 300px;
     text-align: justify;
 }
 .contact{
     padding: 20px;
     background-color: green;
-    width: 500px;
+    width: fit-content;
     height: 300px;
     text-align: justify;
 }
